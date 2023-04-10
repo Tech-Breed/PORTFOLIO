@@ -12,6 +12,33 @@ h1{
 }
 
 
+
+/* scroll bar */
+
+/* custom scroll */
+  
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: white;
+  }
+  
+  
+ /* linear gradient */
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 12px;
+    background: linear-gradient(135deg, #08f5d5, #fff, rgb(7, 215, 242));
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #1a6ad2, #fff, rgb(245, 5, 53));
+  }
+  
+
+
 /* nav bar */
 .responsive-bar{
     display: none;
@@ -181,122 +208,37 @@ a{
     
    
     
-    .container {
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
-    }
     
-  .bg{
-   
-    
-
-  }
    
    
-   
-    @media only screen and (max-width: 732px) {
-    body {
-        width: fit-content;
-    }
-    .container{
-        width:fit-content;
-    }
-   }
-    @media only screen and (max-width: 700px) {
-    body {
-        width: fit-content;
-    }
-    .container{
-        width:fit-content;
-    }
-   }
-    @media only screen and (max-width: 692px) {
-    body {
-        width: fit-content;
-    }
-    .container{
-        width:fit-content;
-    }
-   }
-    @media only screen and (max-width: 612px) {
-    body {
-        width: fit-content;
-    }
-    .container{
-        width:fit-content;
-    }
-   }
-    @media only screen and (max-width: 375px) {
-    body {
-        width: fit-content;
-    }
-    .container{
-        width:fit-content;
-    }
-   }
-    @media only screen and (max-width: 414px) {
-    body {
-        width: fit-content;
-    }
-    .container{
-        width:fit-content;
-    }
-   }
-    @media only screen and (max-width: 412px) {
-    body {
-        width: fit-content;
-    }
-    .container{
-        width:fit-content;
-    }
-   }
-    @media only screen and (max-width: 540px) {
-    body {
-        width: fit-content;
-    }
-    .container{
-        width:fit-content;
-    }
-   }
-
-
    /* header */
    
 /* heading */
 
 .header {
-  display: flex;
-  flex-wrap: wrap;
   width: auto;
   margin: 0;
   padding: 0;
+
 }
 
 .header-text {
   flex:1 ;
 }
 
+.text{
 
+    width:650px; 
+    padding: 34px 58px; padding-left:73px;  
+    font-weight: bold; 
+    background: linear-gradient(90deg, #12C2E9 0%, #c471ed 50%, #f64f59 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+
+}
    
    /* update */
-   .update{
-    
-    background: #12C2E9;
-    background: linear-gradient(90deg, #12C2E9 0%, #c471ed 50%, #f64f59 100%);
-    border-radius: 26px 26px;
-    padding: 36px; 
-    padding-left:55px;
-    padding-right: 55px;
-    font-weight:500 !important; 
-    font-size:large !important;
-    font-weight: bold;
-    width: 100%;
-   }
+   
 
 
     /* card */
