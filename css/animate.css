@@ -27,5 +27,163 @@
     }
   }
   
+   /* Featured Cards */
+   .featured-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .card-content {
+    padding: 15px;
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .card button {
+    background-color: #6a60db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .card button i {
+    margin-left: 10px;
+  }
+  
+  /* Responsive Design */
+  @media only screen and (max-width: 1200px) {
+    .featured-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .featured-header {
+        flex-direction: column;
+    }
+  
+    .featured-header h2 {
+        font-size: 2rem;
+    }
+  
+    .featured-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .featured-cards {
+        grid-template-columns: 1fr;
+    }
+  
+    .featured-header h2 {
+        font-size: 1.8rem;
+    }
+  }  
+    
+    
+  /* Zoom-In Effect on Images and Cards */
+.card {
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .slide {
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Zoom in the card */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  }
+  
+  .card-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-image:hover img {
+    transform: scale(1.2); /* Zoom-in on hover */
+  }
   
   
+  /* Shadow Background Effect */
+  .shadow-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .shadow-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+  }
+  
+  .shadow-overlay.active {
+    display: flex;
+  }
+  
+  .card-image img {
+    object-fit: cover; /* Ensures the image fits nicely within the card */
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+  }
+  
+  .B,button:hover{
+    height: 50%;
+    color: rgb(102, 99, 99);
+    transform: scale(1.05); /* Zoom in the card */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    transform: scale(1.2);
+    transition: transform 0.3s ease, 
+  }
+  
+  .B,button{
+    transition: transform 0.3s ease, 
+  }

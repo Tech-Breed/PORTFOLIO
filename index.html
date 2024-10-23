@@ -5,16 +5,21 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/card.css">
+ <link rel="stylesheet" href="css/nav.css">
 <link rel="stylesheet" href="css/animate.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+<!-- <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
 <link rel="stylesheet" href="vendor/select2/select2.min.css">
 <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
 <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
 <link rel="icon" type="image/x-icon"  href="images/icon.png"> 
     
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
@@ -41,32 +46,41 @@
 <body>
 
 
-  <div  class="bg">
-      
-      <div class="responsive-bar">
-          <div class="logo">
-              <img src="images/icon.png" alt="logo"/>
-              </div>
-              <div class="menu">
-              <h4><span class="fa fa-bars"></span></h4>
-              </div>
-          </div>
-          <nav>
-              <div class="logo">
-              <img src="images/icon.png" alt="logo"/>
-              </div>
-           <ul>
-             
-               <li><a href="#projects"> Projects</a></li>
+  <!-- Nav bar -->
 
-               <li><a href="#contact"> Contact Us</a></li>
-
-               <li><a href="about.html"> About</a></li>
-        
-               <li><a href="#services">Services</a></li>
-              
-              </ul>
-          </nav>
+  <div class="container1">
+    <div class="nav1">
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+                            <path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+                        </svg>
+                    </a>
+                </li>
+                <li> <a href="" id="Service" >Service</a></li>
+                <li><a id="prjects" href="">projects</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+            <ul>
+                <li><img style="margin-right: 10px; margin: 5px; border-radius: 10px;" src="images/icon.png" alt="LogoImg" id="logo" width="100" height="40"></li>
+                <li class="hideOnMobile"><a href="#">Service</a></li>
+                <li class="hideOnMobile"><a id="prjects" href="">Projects</a></li>
+                <li class="hideOnMobile"><a href="#"></a></li>
+                <li class="hideOnMobile"><a href="#"></a></li>
+                <li class="menu-button" onclick="showSidebar()">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+                            <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div> 
           
 <br>
 <br>
@@ -77,13 +91,9 @@
 <br>
  
 <div style="font-style: italic;">
-
-  <div class="scroll-up-btn">
-    <i class="fas fa-angle-up"></i>
-  </div>
 <center>
-  <h1>HELLO</h1>
-  <h1 id="greeting"></h1>
+  <h1><b>HELLO</b></h1>
+  <b><h1 id="greeting"></h1></b>
 </center>
 
 </div>
@@ -117,7 +127,7 @@
                         </a>
                       </h4>
                       <br>
-                        <h6 style="font-style: italic;  background: linear-gradient(90deg, #12C2E9 0%, #c471ed 50%, #f64f59 100%);
+                        <h6 style="font-style: italic;  background: linear-gradient(90deg, #4b5658 0%, #a7a4a8 50%, #0e0d0d 100%);
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;font-weight: 600; font-size: large;"> I Design And Code Beautifully Simple Things.</h6>
                     </center>
@@ -127,80 +137,89 @@
 
      
 
-    <div>
+    <!-- <div>
         <center>
-            <button style="padding: 11px 24px; border-radius: 19px; border: none;background: linear-gradient(90deg, #12C2E9 0%, #c471ed 50%, #f64f59 100%);
+            <button style="padding: 11px 24px; border-radius: 19px; border: none;background: linear-gradient(90deg,#272727 0%, #a7a4a8 50%, #555353 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent; ">
                 <h2>
-                    SERVICES
+                    <b>SERVICES</b>
                 </h2>
             </button>
            </center>
-    </div>
+    </div> -->
 
-    <center>
-    <div  class="wrap ">
-        <img src="images/" width="auto"   alt="">
-    </div>
-    </center>
-          
-       
-           <br>
-           <br>
-            
-           <div id="services" class="main">
-            <ul class="cards">
-              <li class="cards_item">
-                <div class="card">
-                  <div class="card_image"><img src="images/designer.jpg"></div>
-                  <div class="card_content">
-                    <h2 style="vertical-align: center;" class="card_title">DESIGNER</h2>
-                    <p class="card_text">
-                      I value simple content structure, clean design patterns, and thoughtful interactions. 
-                    </p>
-                    <br>
-                    <button></button>
-                    
-                  </div>
-                </div>
-              </li>
-              <li class="cards_item">
-                <div class="card">
-                  <div class="card_image"><img src="images/learn.jpg"></div>
-                  <div class="card_content">
-                    <h2 class="card_title">
-                      FRONTEND DEVELOPER
-                    </h2>
-                    <p class="card_text">
-                      I like to code things from scratch, and enjoy bringing ideas to life in the browser with.
+
+
+<!-- Featured Shows Section -->
+<a id="Service" href="">
+<section id="Service" class= "featured-shows">
+<div class="featured-header">
+  <h2>Building digital products,brands, and experience</h2>
+  </div>
+</div>
+<center>
+  <p class="description">
+    A Frontend Developer and Creative Designer
+    <span class="highlight-red">experience in web design</span> 
+    <span class="highlight-black">and Developement.</span>
+  </p>
+</center>
+<div class="featured-cards">
+  <div class="card">
+      <div class="card-image">
+          <img src="images/a53560c8088900e266880f779dacced7.gif" alt="The GC Call">
+      </div>
+      <div class="card-content">
+          <h3>Designer</h3>
+          <p> I value simple content structure, clean design patterns, and thoughtful interactions. </p>
+          &nbsp;
+         
+      </div>
+  </div>
+
+  <div class="card">
+      <div class="card-image">
+          <img src="images/dev.gif" alt="What I Did Next">
+      </div>
+      <div class="card-content">
+          <h3>Frontend Developer</h3>
+          <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser with.
                       
-                      HTML,CSS,JAVASCRIPT, REACT
-                    </p>
-                    <button></button>
-                  </div>
-                </div>
-              </li>
-              <li class="cards_item">
-                <div class="card">
-                  <div class="card_image"><img src="images/mentor.jpg"></div>
-                  <div class="card_content">
-                    <h2 class="card_title">
-                      MENTOR
-                    </h2>
-                    <p class="card_text">
-                      I genuinely care about people, and love helping fellow designers work on their craft.
-                    </p>
-                    <br>
-                   <button></button>
-                  </div>
-                </div>
-              </li>
-           
-                </div>
-              </li>
-            </ul>
-          </div>
+            HTML,CSS,JAVASCRIPT, REACT...</p>
+          &nbsp;
+         
+      </div>
+  </div>
+
+  <div class="card">
+      <div class="card-image">
+          <img src="images/creative.gif" alt="The Lighthouse Conversations">
+      </div>
+      <div class="card-content">
+          <h3>The Creative</h3>
+          <p>I design from pure <B>imagination</B>.</p>
+          &nbsp;
+          
+      </div>
+  </div>
+
+  <div class="card">
+      <div class="card-image">
+          <img src="images/mentor.gif" alt="Wellness">
+      </div>
+      <div class="card-content">
+          <h3>Mentor</h3>
+          <p>I genuinely care about people, and love helping fellow designers work on their craft..</p>
+          &nbsp;
+         
+      </div>
+  </div>
+</div>
+</section>
+</A>
+
+
 
    
             
@@ -211,16 +230,10 @@
 <!-- prjects section -->
  
 <center>
-    <button style="padding: 11px 24px; border-radius: 19px; border: none;background: linear-gradient(90deg, #12C2E9 0%, #c471ed 50%, #f64f59 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent; ">
-                <h1>
-                    My Work Process
-                </h1>
-            </button>
+  <button style="border: none; padding: 20px; text-align: center; width: 50%;text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 9px;"> CONNECT WITH ME <i class="fas fa-arrow-right"></i></button>
 
     <div class="work">
-        <img src="images/developer1.jpg" width="50%" alt="">
+        <img src="images/Developer.gif" width="50%" alt="">
     </div>
 </center>
 
@@ -232,13 +245,46 @@
     <center>
 <div id="projects" class="container3">
     <div class="one">
-        <img src="images/btc.jpg" alt="coin Image">
+        <img src="images/festify.png" alt="coin Image">
         <div class="info">
-          <h3>Template for crypto converter</h3>
+          <h3>An event platfrom, for ticketing booking evnts</h3>
           <p>
-           Convert Different Currency To Usdt
+           Book your favourite events
           </p>
-          <a href="https://tech-breed.github.io/crypto-coverter/" class="btn">view Site</a>
+          <a href="https://tech-breed.github.io/festifi/" class="btn">view Site</a>
+        </div>
+      </div>
+
+    <div class="one">
+        <img src="images/food site.png" alt="coin Image">
+        <div class="info">
+          <h3>A Restuarant template</h3>
+          <p>
+           order your meals conveineitly
+          </p>
+          <a href=" https://tech-breed.github.io/food-services/" class="btn">view Site</a>
+        </div>
+      </div>
+
+    <div class="one">
+        <img src="images/mimo.png" alt="coin Image">
+        <div class="info">
+          <h3>Ai chat bot V1</h3>
+          <p>
+           Converse with Mimo chat bot
+          </p>
+          <a href="https://tech-breed.github.io/bot/" class="btn">view Site</a>
+        </div>
+      </div>
+
+    <div class="one">
+        <img src="images/image.gif" alt="coin Image">
+        <div class="info">
+          <h3>A website for a creative community</h3>
+          <p>
+           Be creative
+          </p>
+          <a href="https://tech-breed.github.io/facee/" class="btn">view Site</a>
         </div>
       </div>
 
@@ -255,19 +301,7 @@
         </div>
       </div>
 
-    <div class="one">
-        <img src="images/in.jpg" alt="invest Image">
-        <div class="info">
-          <h3>
-            Template For Investment Company Landing Page
-        </h3>
-          <p>
-            Invest In Stocks
-          </p>
-          <a href="https://tech-breed.github.io/investment-/" class="btn">View Site</a>
-        </div>
-      </div>
-
+    
     <div class="one">
         <img src="images/logo.png" alt=" Image">
         <div class="info">
@@ -299,35 +333,44 @@
    <br>
    <br>
    <br>
-<!-- footer -->
+
 
 <footer>
 
-  <H1>
-    GET IN TOUCH
-  </H1>
-<br>
+  <div class="footer-content">
 
-  <ul id="contact" class="icons">
+    <h3>Tech Breed</h3>
+
+    
+<br>
+    <!-- <ul class="socials">
+
+      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+
+      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+
       <li><a href="http://wa.link/36xefh"><span class="fa fa-whatsapp"></span></a></li>
-      
-      <li><a href="https://www.linkedin.com/in/rowland-humble-5432b9140"><span class="fa fa-linkedin"></span></a></li>
-      
+
       <li><a href="https://github.com/"><span class="fa fa-github"></span></a></li>
 
-      <li><a href="#"><span class="fa fa-instagram
-        "></span></a></li>
+      <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
 
-      <li><a href="#"><span class="fa fa-google
-        "></span></a></li>
-  </ul>
-  
-      <div class="footer-copyright">
-          <p>Copyright And Hand Crafted By Me © 2022 TECH BREED.</p>
-      </div>
+    </ul> -->
+
+  </div>
+
+  <div class="footer-bottom">
+
+    <p>Copyright And Hand Crafted By Me © 2022 TECH BREED.</p>
+
+
+  </div>
+
 </footer>
+
  
 <script src="js/animate.js"></script>
 <script src="js/script.js"></script>
+<script src="js/nav.js"></script>
 </body>
 </html>

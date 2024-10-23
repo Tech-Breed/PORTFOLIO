@@ -1,12 +1,15 @@
-// nav
-window.onload=()=>{
-    const $ = document.querySelector.bind(document);
-const $All = document.querySelectorAll.bind(document);
+// Nav functions
+function showSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.style.display = 'flex';
+}
 
-$('#menu').onclick=()=>{              $('#menu').classList.toggle('rotate')
-  $('.nav-page1').classList.toggle('transform')
-  $('.nav-page2').classList.toggle('transform')
-  $('.menu-line1').classList.toggle('rotate1')
-   $('.menu-line2').classList.toggle('rotate2')
+function hideSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.style.display = 'none';
 }
-}
+
+// footer
+const year = document.getElementById("year");
+
+year.textContent = new Date().getFullYear();
